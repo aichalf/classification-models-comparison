@@ -1,52 +1,49 @@
-# Classification Algorithms Comparison (Machine Learning)
+# 📊 Classification Algorithms Comparison — ML Benchmarking
 
-This project compares multiple classification algorithms on a structured dataset using Python and scikit-learn.
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python) ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange) ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 
-## Objective
+> Systematic benchmarking of 3 classification algorithms — Logistic Regression, Decision Tree, and KNN — with full evaluation metrics and comparative analysis.
 
-The goal of this project is to evaluate and compare the performance of different classification models and understand how their behavior changes depending on the data.
+## 📌 Overview
 
-## Models Implemented
+This project evaluates how different classification models behave on the same structured dataset, providing a side-by-side comparison to support informed model selection in real-world scenarios.
 
-The following models were trained and evaluated:
+## 🎯 Models Compared
 
-- Logistic Regression
-- Decision Tree
-- K-Nearest Neighbors (KNN)
+| Model | Strengths | Best When |
+|---|---|---|
+| Logistic Regression | Interpretable, fast | Linear boundaries, probability output needed |
+| Decision Tree | Visual, non-linear | Non-linear patterns, explainability needed |
+| K-Nearest Neighbors | Simple, no training | Small datasets, local patterns |
 
-## Machine Learning Pipeline
+## 📐 Evaluation Metrics
+- **Accuracy** — overall correctness
+- **F1-Score** — balance between precision and recall
+- **Precision** — reliability of positive predictions
+- **Recall** — coverage of actual positives
+- **Confusion Matrix** — per-class breakdown
 
-The project follows a complete workflow:
+## 🔍 ML Pipeline
+1. Data loading and preprocessing
+2. Train/test split with stratification
+3. Model training (default + tuned hyperparameters)
+4. Cross-validation (k-fold)
+5. Metric comparison and visualization
 
-- Data loading and preprocessing
-- Train/test split
-- Model training
-- Model evaluation
+## 🛠️ Tech Stack
+`Python` · `scikit-learn` · `pandas` · `NumPy` · `Matplotlib` · `Seaborn`
 
-## Evaluation Metrics
+## 💼 Business Applications
+- Model selection framework for data science teams
+- Baseline benchmarking before deploying advanced models
+- Educational reference for ML practitioners
 
-The models were evaluated using:
+## 🚀 Run Locally
+```bash
+git clone https://github.com/aichalf/classification-models-comparison
+pip install scikit-learn pandas numpy matplotlib seaborn
+# Open notebooks in Jupyter or Google Colab
+```
 
-- Accuracy
-- Precision
-- Recall
-- F1-score
-
-## Key Insights
-
-- No single model performs best in all situations
-- Simpler models like Logistic Regression can perform competitively
-- Evaluation metrics beyond accuracy are important for understanding model performance
-
-## Technologies
-
-- Python
-- Jupyter Notebook
-- scikit-learn
-- pandas
-- numpy
-- matplotlib
-
-## Context
-
-This project was developed as part of a machine learning course and focuses on building a solid understanding of classification algorithms and evaluation techniques.
+## 👩‍💻 Author
+**Aicha Lfakir** · [LinkedIn](https://linkedin.com/in/aicha-lfakir) · [GitHub](https://github.com/aichalf)
